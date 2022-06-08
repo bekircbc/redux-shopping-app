@@ -18,7 +18,7 @@ export const cartSlice = createSlice({
     removeItem: (state) => {
       state.items.pop();
     },
-    addCustomerName: (state, action) => {
+    changeCustomerName: (state, action) => {
       state.customerName = action.payload;
     },
     addCoupon: (state) => {
@@ -28,5 +28,5 @@ export const cartSlice = createSlice({
   },
 });
 
-export const { addItem, removeItem } = cartSlice.actions;
+export const { addItem, removeItem, addCoupon } = cartSlice.actions;
 export default cartSlice.reducer;
